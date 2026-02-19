@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_hero_slide_hero_carrousels",
+  "info": {
+    "displayName": "heroCarousel"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "slogan",
+        "financing",
+        "process"
+      ]
+    },
+    "order": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}
