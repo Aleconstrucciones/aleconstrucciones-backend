@@ -516,7 +516,28 @@ export interface ApiContactRequestContactRequest
     message: Schema.Attribute.Text;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     phone: Schema.Attribute.String & Schema.Attribute.Required;
-    projectType: Schema.Attribute.String;
+    projectType: Schema.Attribute.Enumeration<
+      [
+        'Alba\u00F1iler\u00EDa',
+        'Carpinter\u00EDa',
+        'Cerramientos',
+        'Climatizaci\u00F3n',
+        'Construcciones Generales',
+        'Electricidad',
+        'Gasista',
+        'Herrer\u00EDa',
+        'Impermeabilizaciones',
+        'Instalaci\u00F3n de pisos',
+        'Pintura',
+        'Piscinas',
+        'Plomer\u00EDa',
+        'Servicios de dise\u00F1o y direcci\u00F3n',
+        'Techos',
+        'Trabajos en altura',
+        'Vidrier\u00EDa',
+        'Yeser\u00EDa',
+      ]
+    >;
     publishedAt: Schema.Attribute.DateTime;
     type: Schema.Attribute.Enumeration<['Contacto', 'Cotizacion']>;
     updatedAt: Schema.Attribute.DateTime;
