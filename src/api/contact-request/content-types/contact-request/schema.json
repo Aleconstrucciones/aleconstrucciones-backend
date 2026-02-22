@@ -33,32 +33,12 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "Contacto",
+        "Consulta",
         "Cotizacion"
       ]
     },
     "projectType": {
-      "type": "enumeration",
-      "enum": [
-        "Albañilería",
-        "Carpintería",
-        "Cerramientos",
-        "Climatización",
-        "Construcciones Generales",
-        "Electricidad",
-        "Gasista",
-        "Herrería",
-        "Impermeabilizaciones",
-        "Instalación de pisos",
-        "Pintura",
-        "Piscinas",
-        "Plomería",
-        "Servicios de diseño y dirección",
-        "Techos",
-        "Trabajos en altura",
-        "Vidriería",
-        "Yesería"
-      ]
+      "type": "string"
     }
   }
 }
