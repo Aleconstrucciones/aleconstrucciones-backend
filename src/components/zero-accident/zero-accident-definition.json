@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_zero_accident_zero_accident_definitions",
+  "info": {
+    "displayName": "zeroAccidentDefinition"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "zero-accident.zero-accident-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

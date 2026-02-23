@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_zero_accident_safety_cultures",
+  "info": {
+    "displayName": "safetyCulture"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

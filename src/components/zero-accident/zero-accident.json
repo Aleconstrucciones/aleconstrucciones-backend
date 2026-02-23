@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_zero_accident_zero_accidents",
+  "info": {
+    "displayName": "zeroAccident"
+  },
+  "options": {},
+  "attributes": {
+    "securityHero": {
+      "type": "component",
+      "component": "zero-accident.security-hero",
+      "repeatable": false
+    },
+    "safetyCulture": {
+      "type": "component",
+      "component": "zero-accident.safety-culture",
+      "repeatable": false
+    },
+    "zeroAccidentDefinition": {
+      "type": "component",
+      "component": "zero-accident.zero-accident-definition",
+      "repeatable": false
+    },
+    "safetyAndHygiene": {
+      "type": "component",
+      "component": "zero-accident.safety-and-hygiene",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

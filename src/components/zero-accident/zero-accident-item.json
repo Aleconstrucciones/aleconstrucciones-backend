@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_zero_accident_zero_accident_items",
+  "info": {
+    "displayName": "zero-accident-item"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

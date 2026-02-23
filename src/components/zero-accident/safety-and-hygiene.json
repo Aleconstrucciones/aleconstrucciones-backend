@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_zero_accident_safety_and_hygienes",
+  "info": {
+    "displayName": "safetyAndHygiene"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

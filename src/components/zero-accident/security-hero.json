@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_zero_accident_security_heroes",
+  "info": {
+    "displayName": "securityHero"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "responsibleName": {
+      "type": "string"
+    },
+    "responsibleRole": {
+      "type": "string"
+    },
+    "responsibleMedia": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}
