@@ -37,6 +37,11 @@
       "type": "component",
       "component": "value.values",
       "repeatable": true
+    },
+    "zeroAccident": {
+      "type": "component",
+      "component": "zero-accident.zero-accident",
+      "repeatable": false
     }
   }
 }

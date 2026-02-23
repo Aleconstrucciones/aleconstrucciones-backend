@@ -457,6 +457,10 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     value: Schema.Attribute.Component<'value.values', true>;
     vision: Schema.Attribute.Text;
+    zeroAccident: Schema.Attribute.Component<
+      'zero-accident.zero-accident',
+      false
+    >;
   };
 }
 
