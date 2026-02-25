@@ -20,7 +20,10 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://aleconstrucciones-frontend.vercel.app'],
+      origin: [
+        'https://aleconstrucciones-frontend.vercel.app',
+        'http://localhost:3000',
+      ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     },
   },
