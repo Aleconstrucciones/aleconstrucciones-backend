@@ -7,7 +7,7 @@ export default ({ env }) => ({
                 api_key: env("CLOUDINARY_API_KEY"),
                 api_secret: env("CLOUDINARY_API_SECRET"),
                 uploadOptions: {
-                    folder: env("CLOUDINARY_FOLDER", "production"),
+                    folder: env("CLOUDINARY_PRESET"),
                 },
             },
         },
