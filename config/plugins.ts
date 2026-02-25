@@ -1,3 +1,4 @@
+console.log("CLOUDINARY_FOLDER:", process.env.CLOUDINARY_FOLDER);
 export default ({ env }) => ({
     upload: {
         config: {
