@@ -1,4 +1,3 @@
-console.log("CLOUDINARY_FOLDER:", process.env.CLOUDINARY_FOLDER);
 export default ({ env }) => ({
     upload: {
         config: {
@@ -7,13 +6,7 @@ export default ({ env }) => ({
                 cloud_name: env("CLOUDINARY_CLOUD_NAME"),
                 api_key: env("CLOUDINARY_API_KEY"),
                 api_secret: env("CLOUDINARY_API_SECRET"),
-            },
-            actionOptions: {
-                upload: {
-                    folder: env("CLOUDINARY_FOLDER"),
-                    use_filename: true,
-                    unique_filename: false,
-                },
+                folder: env("CLOUDINARY_FOLDER", "production"),
             },
         },
     },
