@@ -9,7 +9,9 @@ export default ({ env }) => ({
       },
       actionOptions: {
         upload: {
-          folder: env("CLOUDINARY_FOLDER", "production"),
+          params: {
+            folder: env("CLOUDINARY_FOLDER"),
+          },
         },
       },
     },
