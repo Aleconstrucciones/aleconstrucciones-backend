@@ -17,9 +17,10 @@ export default factories.createCoreService(
       phone?: string;
       message: string;
       type: string;
+      option?: string;
     }) {
 
-      const { name, email, phone, message, type } = data;
+      const { name, email, phone, message, type, option } = data;
 
       const html = `
         <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 40px;">
@@ -53,11 +54,11 @@ export default factories.createCoreService(
           replyTo: email,
           subject: `Nueva consulta - ${name} (${type})`,
           text:
-                `Nueva solicitud de contacto
+                `Nueva consulta de ${name} - ${type} (${option})
 
                 Nombre: ${name}
                 Email: ${email}
-                Teléfono: ${phone || 'No especificado'}
+                Teléfono: ${phone}
                 Tipo: ${type}
 
                 Mensaje:
