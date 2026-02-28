@@ -9,17 +9,4 @@ export default ({ env }) => ({
       },
     },
   },
-
-  email: {
-    config: {
-      provider: "resend",
-      providerOptions: {
-        apiKey: env("RESEND_API_KEY")
-      },
-      settings: {
-        defaultFrom: env("EMAIL_FROM", "onboarding@resend.dev"),
-        defaultReplyTo: env("EMAIL_REPLY_TO", "onboarding@resend.dev"),
-      },
-    },
-  },
 });
