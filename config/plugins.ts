@@ -12,18 +12,13 @@ export default ({ env }) => ({
 
   email: {
     config: {
-      provider: "nodemailer",
+      provider: "resend",
       providerOptions: {
-        host: env("SMTP_HOST"),
-        port: env.int("SMTP_PORT", 587),
-        auth: {
-          user: env("SMTP_USER"),
-          pass: env("SMTP_PASS"),
-        },
+        apiKey: env("RESEND_API_KEY")
       },
       settings: {
-        defaultFrom: env("SMTP_USER"),
-        defaultReplyTo: env("SMTP_USER"),
+        defaultFrom: env("EMAIL_FROM", "onboarding@resend.dev"),
+        defaultReplyTo: env("EMAIL_REPLY_TO", "onboarding@resend.dev"),
       },
     },
   },
