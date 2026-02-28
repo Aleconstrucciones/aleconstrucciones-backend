@@ -8,7 +8,7 @@ export default [
         useDefaults: true,
         directives: {
           'img-src': [
-            "'self",
+            "'self'",
             'data:',
             'blob:',
             'res.cloudinary.com',
@@ -22,6 +22,7 @@ export default [
     config: {
       origin: [
         'https://aleconstrucciones-frontend.vercel.app',
+        /\.vercel\.app$/,
         'http://localhost:3000',
       ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
