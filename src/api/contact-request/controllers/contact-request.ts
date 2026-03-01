@@ -7,11 +7,11 @@ export default factories.createCoreController(
     async create(ctx) {
       const response = await super.create(ctx);
 
-      const { name, email, phone, message, type, option } = ctx.request.body.data;
+      const { name, email, phone, message, type, project } = ctx.request.body.data;
 
       await strapi
         .service('api::contact-request.contact-request')
-        .sendNotificationEmail({ name, email, phone, message, type, option });
+        .sendNotificationEmail({ name, email, phone, message, type, project });
 
       return response;
     },
